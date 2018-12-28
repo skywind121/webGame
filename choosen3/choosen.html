@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tic-tac-toe</title>
+    <style type="text/CSS">
+        table, th, td{
+				border: 1px solid black;
+				border-collapse: collapse;
+				font-family: Calibri;
+				font-size: 48px;
+        }
+        caption {
+            color: navy;
+        }
+        tbody tr {
+            height: 100px;
+        }
+        td {
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        var times = 0;
+        
+        function start(){
+            var one = document.getElementById("1");
+            one.addEventListener("click", setOne, false);
+            var two = document.getElementById("2");
+            two.addEventListener("click", setTwo, false);
+            var three = document.getElementById("3");
+            three.addEventListener("click", setThree, false);
+            var four = document.getElementById("4");
+            four.addEventListener("click", setFour, false);
+            var five = document.getElementById("5");
+            five.addEventListener("click", setFive, false);
+            var six = document.getElementById("6");
+            six.addEventListener("click", setSix, false);
+            var seven = document.getElementById("7");
+            seven.addEventListener("click", setSeven, false);
+            var eight = document.getElementById("8");
+            eight.addEventListener("click", setEight, false);
+            var nine = document.getElementById("9");
+            nine.addEventListener("click", setNine, false);
+        }
+
+        function setOne(){
+            if(document.getElementById("1").innerHTML=="O"||document.getElementById("1").innerHTML=="X"){
+                window.alert("Not allowed");
+            }
+            else{
+                if(times%2 == 1){
+                document.getElementById( "1" ).innerHTML = "O";
+                }
+                if(times%2 == 0){
+                document.getElementById( "1" ).innerHTML = "X";
+                }
+            }
+            times++;
+            setTimeout('check()',1);
+        }
+        function setTwo(){
+            if(document.getElementById("2").innerHTML=="O"||document.getElementById("2").innerHTML=="X"){
+                window.alert("Not allowed");
+            }
+            else{
+                if(times%2 == 1){
+                document.getElementById( "2" ).innerHTML = "O";
+                }
+                if(times%2 == 0){
+                document.getElementById( "2" ).innerHTML = "X";
+                }
+            }
+            
+            times++;
+            setTimeout('check()',1);
+        }
+        function setThree(){
+            if(document.getElementById("3").innerHTML=="O"||document.getElementById("3").innerHTML=="X"){
+                window.alert("Not allowed");
+            }
+            else{
+                if(times%2 == 1){
+                document.getElementById( "3" ).innerHTML = "O";
+                }
+                if(times%2 == 0){
+                document.getElementById( "3" ).innerHTML = "X";
+                }
+            }
+            times++;
+            
+            setTimeout('check()',1);
+        }
+        function setFour(){
+            if(document.getElementById("4").innerHTML=="O"||document.getElementById("4").innerHTML=="X"){
+                window.alert("Not allowed");
+            }
+            else{
+                if(times%2 == 1){
+                document.getElementById( "4" ).innerHTML = "O";
+                }
+                if(times%2 == 0){
+                document.getElementById( "4" ).innerHTML = "X";
+                }
+            }
+            
+            times++;
+            setTimeout('check()',1);
+        }
+        function setFive(){
+            if(document.getElementById("5").innerHTML=="O"||document.getElementById("5").innerHTML=="X"){
+                window.alert("Not allowed");
+            }
+            else{
+                if(times%2 == 1){
+                document.getElementById( "5" ).innerHTML = "O";
+                }
+                if(times%2 == 0){
+                document.getElementById( "5" ).innerHTML = "X";
+                }
+            }
+            
+            times++;
+            setTimeout('check()',1);
+        }
+        function setSix(){
+            if(document.getElementById("6").innerHTML=="O"||document.getElementById("6").innerHTML=="X"){
+                window.alert("Not allowed");
+            }
+            else{
+                if(times%2 == 1){
+                document.getElementById( "6" ).innerHTML = "O";
+                }
+                if(times%2 == 0){
+                document.getElementById( "6" ).innerHTML = "X";
+                }
+            }
+            
+            times++;
+            setTimeout('check()',1);
+        }
+        function setSeven(){
+            if(document.getElementById("7").innerHTML=="O"||document.getElementById("7").innerHTML=="X"){
+                window.alert("Not allowed");
+            }
+            else{
+                if(times%2 == 1){
+                document.getElementById( "7" ).innerHTML = "O";
+                }
+                if(times%2 == 0){
+                document.getElementById( "7" ).innerHTML = "X";
+                }
+            }
+            times++;
+            setTimeout('check()',1);
+        }
+        function setEight(){
+            if(document.getElementById("8").innerHTML=="O"||document.getElementById("8").innerHTML=="X"){
+                window.alert("Not allowed");
+            }
+            else{
+                if(times%2 == 1){
+                document.getElementById( "8" ).innerHTML = "O";
+                }
+                if(times%2 == 0){
+                document.getElementById( "8" ).innerHTML = "X";
+                }
+            }
+            times++;
+            setTimeout('check()',1);
+        }
+        function setNine(){
+            if(document.getElementById("9").innerHTML=="O"||document.getElementById("9").innerHTML=="X"){
+                window.alert("Not allowed");
+            }
+            else{
+                 if(times%2 == 1){
+                document.getElementById( "9" ).innerHTML = "O";
+                }
+                if(times%2 == 0){
+                document.getElementById( "9" ).innerHTML = "X";
+                }
+            }
+            times++;
+            setTimeout('check()',1);
+        }
+        function check(){
+            one = document.getElementById("1").innerHTML;
+            two = document.getElementById("2").innerHTML;
+            three = document.getElementById("3").innerHTML;
+            four = document.getElementById("4").innerHTML;
+            five = document.getElementById("5").innerHTML;
+            six = document.getElementById("6").innerHTML;
+            seven = document.getElementById("7").innerHTML;
+            eight = document.getElementById("8").innerHTML;
+            nine = document.getElementById("9").innerHTML;
+            if (one=="X"&&two=="X"&&three=="X"){
+                window.alert("X wins!");
+            }
+            if (four=="X"&&five=="X"&&six=="X"){
+                window.alert("X wins!");
+            }
+            if (seven=="X"&&eight=="X"&&nine=="X"){
+                window.alert("X wins!");
+            }
+            if (one=="X"&&four=="X"&&seven=="X"){
+                window.alert("X wins!");
+            }
+            if (two=="X"&&five=="X"&&eight=="X"){
+                window.alert("X wins!");
+            }
+            if (three=="X"&&six=="X"&&nine=="X"){
+                window.alert("X wins!");
+            }
+            if (one=="X"&&five=="X"&&nine=="X"){
+                window.alert("X wins!");
+            }
+            if (three=="X"&&five=="X"&&seven=="X"){
+                window.alert("X wins!");
+            }
+            
+
+            if (one=="O"&&two=="O"&&three=="O"){
+                window.alert("O wins!");
+            }
+            if (four=="O"&&five=="O"&&six=="O"){
+                window.alert("O wins!");
+            }
+            if (seven=="O"&&eight=="O"&&nine=="O"){
+                window.alert("O wins!");
+            }
+            if (one=="O"&&four=="O"&&seven=="O"){
+                window.alert("O wins!");
+            }
+            if (two=="O"&&five=="O"&&eight=="O"){
+                window.alert("O wins!");
+            }
+            if (three=="O"&&six=="O"&&nine=="O"){
+                window.alert("O wins!");
+            }
+            if (one=="O"&&five=="O"&&nine=="O"){
+                window.alert("O wins!");
+            }
+            if (three=="O"&&five=="O"&&seven=="O"){
+                window.alert("O wins!");
+            }
+            
+            else if(one!=""&&two!=""&&three!=""&&four!=""&&five!=""&&six!=""&&seven!=""&&eight!=""&&nine!=""){
+                window.alert("Tie!");
+            }
+                
+        }
+        
+        window.addEventListener( "load", start, false );
+    </script>
+</head>
+
+<body>
+    <table id="table">
+        <caption>Tic-Tac-Toe</caption>
+        <tbody>
+            <tr>
+                <td id ="1"></td>
+                <td id ="2"></td>
+                <td id ="3"></td>
+            </tr>
+            <tr>
+                <td id ="4"></td>
+                <td id ="5"></td>
+                <td id ="6"></td>
+            </tr>
+            <tr>
+                <td id ="7"></td>
+                <td id ="8"></td>
+                <td id ="9"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    <input id="replay" type="button" value="Replay" disabled onclick="replay()">
+                    <input id="new" type="button" value="New Game" onclick="location.reload()">
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
