@@ -1,0 +1,14 @@
+[
+null,
+{"id":1,"animationId":1,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":77,"name":"蒸気ナックル","note":"","params":[0,0,5,0,0,0,0,0],"price":0,"wtypeId":2},
+{"id":2,"animationId":1,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":1}],"iconIndex":77,"name":"蒸気ナックルlv1","note":"","params":[0,0,10,0,0,0,0,0],"price":0,"wtypeId":2},
+{"id":3,"animationId":1,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":1}],"iconIndex":77,"name":"蒸気ナックルlv2","note":"","params":[0,0,20,0,0,0,0,0],"price":0,"wtypeId":2},
+{"id":4,"animationId":1,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":77,"name":"蒸気ナックルlv3","note":"","params":[0,0,30,0,0,0,0,0],"price":0,"wtypeId":2},
+{"id":5,"animationId":1,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":77,"name":"蒸気ナックルlv4","note":"","params":[0,0,40,0,0,0,0,0],"price":0,"wtypeId":2},
+{"id":6,"animationId":1,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":77,"name":"蒸気ナックルlv5","note":"","params":[0,0,50,0,0,0,0,0],"price":0,"wtypeId":2},
+{"id":7,"animationId":1,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":77,"name":"蒸気ナックルlv6","note":"","params":[0,0,60,0,0,0,0,0],"price":0,"wtypeId":2},
+{"id":8,"animationId":1,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":77,"name":"蒸気ナックルlv7","note":"","params":[0,0,70,0,0,0,0,0],"price":0,"wtypeId":2},
+{"id":9,"animationId":1,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":77,"name":"蒸気ナックルlv8","note":"","params":[0,0,80,0,0,0,0,0],"price":0,"wtypeId":2},
+{"id":10,"animationId":1,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":77,"name":"蒸気ナックルlv9","note":"","params":[0,0,90,0,0,0,0,0],"price":0,"wtypeId":2},
+{"id":11,"animationId":1,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":77,"name":"蒸気ナックルlv10","note":"","params":[0,0,100,0,0,0,0,0],"price":0,"wtypeId":2}
+]

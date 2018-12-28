@@ -1,0 +1,3 @@
+Loop Infomation
+StartTime=0.000000	EndTime=69.819000
+StartPcmOffset=0	EndPcmOffset=3079018
