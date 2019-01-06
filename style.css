@@ -1,0 +1,130 @@
+
+body    {
+    font-family: Microsoft JhengHei;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(107, 106, 106);
+    
+}
+
+.choose a{
+    width: 33.333333334%;
+    background-color:black;
+    font-size: 20px;
+    float:left;
+    text-align:center;
+    color: white;
+    text-decoration-line: none;
+    padding: 10px 0px;
+}
+.choose :hover  {
+    color: black;
+    background-color:cornflowerblue;
+    font-weight: bold;
+}
+
+.button {
+    font-family: Microsoft JhengHei;
+    background-color:dodgerblue;
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    width: 50.1%;
+    height: 5%;
+    top:76%;
+    left:24.9%;
+    position: absolute;
+}
+
+#startpage  {
+    top: 7%;
+    left:25%;
+    position: absolute;
+    width: 50%;
+    height:70%;
+}
+
+#talkBar {
+    border:8px;
+    font-family: Microsoft JhengHei;
+    background-color:dodgerblue;
+    font-size: 20px;
+    color:white;
+    width: 43.05%;
+    height: 15%;
+    top:77%;
+    left:32%;
+    position: absolute;
+}
+
+#position  {
+    top: 7%;
+    left:25%;
+    position: absolute;
+    width: 50%;
+    height:70%;
+}
+
+#character  {
+    top: 77%;
+    left:25%;
+    position: absolute;
+    width: 7%;
+    height:15%;
+}
+
+.introduction   {
+    top:11%;
+    left:27%;
+    position: absolute;
+    overflow: scroll;
+    font-size: 25px;
+}
+
+#bar { /*介紹頁選擇欄*/
+    border:8px;
+    font-family: Microsoft JhengHei;
+    background-color:skyblue;
+    font-size: 30px;
+    color:white;
+    width: 200px;
+    height: 800px;
+    top:9%;
+    left:25%;
+    position: absolute;
+    text-align: center;
+    
+}
+
+#introBar { /*介紹頁資料文字位置*/
+    border:8px;
+    font-family: Microsoft JhengHei;
+    background-color:skyblue;
+    font-size: 20px;
+    color:white;
+    width: 750px;
+    height: 800px;
+    top:9%;
+    left:35%;
+    position: absolute;
+}
+
+td  {
+    line-height: 40px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+#introWord  {
+    position: absolute;
+    font-size: 25px;
+    color: black;
+}
+
+.mouse {
+    cursor:pointer
+}
+.mouse:hover {
+    background-color: navy;
+}

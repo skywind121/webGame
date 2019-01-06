@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 
 <html>
-   <head>
-      <meta charset = "utf-8">
-      <title>Simple Drawing Program</title>
-      <style type="text/CSS">
-         
-     </style>
-     <script>
-
-     </script>   
-   </head>
-   <body>
-      <h1>請選擇你要玩的糞game</h1>
-      <a href="15puzzle/puzzle.html">15 Puzzle</a><br><br>
-      <a href="choosen3/choosen.html">過三關</a><br><br>
-      
-   </body>
+    <head>
+        <meta charset = "utf-8">
+        <title>8+9的大冒險-首頁</title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <div class="choose"> <!--選擇欄-->
+            <a href="index.html">首頁</a>
+            <a href="intro.html">介紹</a>
+            <a href="">報告下載</a>
+        </div>
+        <div>
+            <img src="img/startpage.png" id="startpage"> 
+        </div>
+        <div>
+            <input type="button" value="開始遊戲" id="start" class="button" onclick="javascript:location.href='story1.html'" >
+        </div>
+        <div>
+            <audio src="bgm/ToGlory.mp3" controls ></audio> 
+        </div>
+    </body>
 </html>

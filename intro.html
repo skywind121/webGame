@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>8+9的大冒險-介紹</title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <script>
+            function start(){
+                
+            }
+            function eightNight(){
+                var intro = document.getElementById("introWord");
+                intro.innerHTML = "8+9是";
+            }
+            function story(){
+                var intro = document.getElementById("introWord");
+                intro.innerHTML = "李大明是一個向往自由的年輕人，在一次和父親的爭吵後離家出走了。缺少社會經驗、做事只靠蠻力和熱血的他到底會遇到什麽呢？";
+            }
+            window.addEventListener( "load", start, false );
+        </script>
+    </head>
+    <body>
+        <div class="choose">
+            <a href="index.html">首頁</a>
+            <a href="intro.html">介紹</a>
+            <a href="">報告下載</a>
+        </div>
+        <table style="border:8px black groove;" cellpadding="10" id="bar" class="introduction">
+            <tr><td class="mouse" onclick="javascript:story()">故事背景</td></tr>
+            <tr><td class="mouse" onclick="javascript:eightNight()">8+9</td></tr>
+            
+            <tr><td>test</td></tr>
+            <tr><td>黑道</td></tr>
+            <tr><td>test</td></tr>
+            <tr><td>黑道</td></tr>
+            <tr><td>test</td></tr>
+            <tr><td>黑道</td></tr>
+            <tr><td>test</td></tr>
+            <tr><td>黑道</td></tr>
+            <tr><td>test</td></tr>
+        </table>
+        
+        <table style="border:8px black groove;" cellpadding="10" id="introBar" >
+            <td id="introWord">
+                李大明是一個向往自由的年輕人，在一次和父親的爭吵後離家出走了。缺少社會經驗、做事只靠蠻力和熱血的他到底會遇到什麽呢？
+            </td>
+        </table>
+    
+    </body>
+</html>
