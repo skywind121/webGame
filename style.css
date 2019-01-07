@@ -4,7 +4,6 @@ body    {
     margin: 0;
     padding: 0;
     background-color:rgb(107, 106, 106);
-    
 }
 
 .choose a{
@@ -23,7 +22,7 @@ body    {
     font-weight: bold;
 }
 
-.button {
+#start {
     font-family: Microsoft JhengHei;
     background-color:dodgerblue;
     font-size: 20px;
@@ -32,6 +31,37 @@ body    {
     width: 50.1%;
     height: 5%;
     top:76%;
+    left:24.9%;
+    position: absolute;
+}
+#remind {
+    position: absolute;
+    top:96%;
+    left: 78%;
+}
+
+#c1 {
+    font-family: Microsoft JhengHei;
+    background-color:dodgerblue;
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    width: 50.1%;
+    height: 5%;
+    top:82%;
+    left:24.9%;
+    position: absolute;
+}
+
+#c2 {
+    font-family: Microsoft JhengHei;
+    background-color:dodgerblue;
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    width: 50.1%;
+    height: 5%;
+    top:88%;
     left:24.9%;
     position: absolute;
 }
@@ -55,6 +85,7 @@ body    {
     top:77%;
     left:32%;
     position: absolute;
+    cursor:pointer;
 }
 
 #position  {
@@ -92,7 +123,6 @@ body    {
     top:9%;
     left:25%;
     position: absolute;
-    text-align: center;
     
 }
 
@@ -120,11 +150,44 @@ td  {
     position: absolute;
     font-size: 25px;
     color: black;
-}
+    top:43%;}
 
 .mouse {
     cursor:pointer
 }
 .mouse:hover {
     background-color: navy;
+}
+
+#photo{
+    position: absolute;
+    top: 13%;
+    left: 37%;
+    z-index: 1;
+}
+
+#choose1 {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    color: black;
+    cursor:pointer;
+    border: 5px solid unset;
+    border-radius: 20px;
+}
+
+#choose2 {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    color: black;
+    cursor:pointer;
+    border: 5px solid unset;
+    border-radius: 20px;
+}
+
+#gif    {
+    position: absolute;
+    top:23%;
+    left: 33%;
 }

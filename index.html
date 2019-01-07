@@ -6,24 +6,29 @@
         <title>8+9的大冒險-首頁</title>
         <link rel = "stylesheet" type = "text/css" href = "style.css">
         
-        <script>
-            
-        </script>
+        
+
+        
     </head>
     <body>
         <div class="choose"> <!--選擇欄-->
             <a href="index.html">首頁</a>
             <a href="intro.html">介紹</a>
-            <a href="">報告下載</a>
+            <a href="8+9大冒險.pptx">報告下載</a>
         </div>
         <div>
             <img src="img/startpage.png" id="startpage"> 
         </div>
         <div>
-            <input type="button" value="開始遊戲" id="start" class="button" onclick="javascript:location.href='story1.html'" >
+            <input type="button" value="開始遊戲(第一章)" id="start" class="button" onclick="javascript:location.href='story1.html'" >
+            <input type="button" value="第二章" id="c1" class="button" onclick="javascript:location.href='story2.html'" >
+            <input type="button" value="第三章" id="c2" class="button" onclick="javascript:location.href='story3.html'" >
         </div>
         <div>
             <audio src="bgm/ToGlory.mp3" controls ></audio> 
+        </div>
+        <div id="remind">
+            建議使用最大化視窗或全熒幕模式，以獲取最好的體驗。
         </div>
     </body>
 </html>
