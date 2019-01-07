@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>8+9的大冒險-第二章</title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        
+        <script type="text/javascript">
+            var i = 0;
+            function start(){
+                var talk = document.getElementById("start");
+                talk.addEventListener("click", talk, false);
+            }
+            
+            function talk(){
+                i++;
+                message = document.getElementById("message");
+                choose1 = document.getElementById("choose1");
+                choose2 = document.getElementById("choose2");
+                character = document.getElementById("character");
+                position = document.getElementById("position");
+                gif = document.getElementById("gif");
+                if (i==1){
+                    message.innerHTML = "『幸好現在電子支付這麽方便，用手機就可以付款，不然我恐怕就要睡天橋底了。』";
+                }
+                if (i==2){
+                    message.innerHTML = "『一時衝動就離家出走了，雖然嘴上說不需要老爸就能活下去，但是賬號裏的錢用光我還是會完蛋啊，得想個辦法賺錢了。』";
+                }
+                if (i==3){
+                    message.innerHTML = "『不過賺錢的事可以慢慢想，現在還是放鬆一下吧。』說著，就打開了最喜歡玩的LOL。";
+                }
+                if (i==4){
+                    message.innerHTML = "『靠腰哦，明明我排到了中路你他X秒鎖劫是什麽意思啊，算了反正我五路神，那麽該選什麽屌打對面呢？』";
+                }
+                if (i==5){
+                    message.innerHTML = "選什麽好呢?";
+                    document.getElementById("choose1").style.backgroundColor="skyblue";
+                    document.getElementById("choose1").style.border="5px solid black";
+                    document.getElementById("choose2").style.border="5px solid black";
+                    document.getElementById("choose2").style.backgroundColor="skyblue";
+                    choose1.innerHTML = "達瑞斯";
+                    choose2.innerHTML = "烏爾加特";
+                    choose1.addEventListener("click", c1, false);
+                    choose2.addEventListener("click", c2, false);      
+                }
+                if (i==6){
+                    message.innerHTML = "別浪費時間了，快選！";
+                    i=6;    
+                }
+                if (i==7){
+                    message.innerHTML = "靠腰，跳Game我的Bo3就完蛋了，選啊！";
+                    i=6;    
+                }
+                if(i==17){
+                    var sound1 = document.getElementById("sound1");
+                    sound1.play();
+                    gif.src = "img/gif1.gif";
+                    message.innerHTML = "『巨錘瑞斯』！";
+                    choose1.innerHTML = "";
+                    choose2.innerHTML = "";
+                    document.getElementById("choose1").style.border="unset";
+                    document.getElementById("choose2").style.border="unset";
+                    document.getElementById("choose1").style.backgroundColor="unset";
+                    document.getElementById("choose2").style.backgroundColor="unset";
+                }
+                if(i==18){
+                    var sound2 = document.getElementById("sound2");
+                    sound2.play();
+                    gif.src = "img/gif2.gif";
+                    message.innerHTML = "『還敢下來啊冰鳥』！";
+                }
+                if(i==19){
+                    gif.src = "";
+                    message.innerHTML = "就這樣，狀態很好的我連勝了七場。";
+                    i=35
+                }
+                if(i==26){
+                    var sound3 = document.getElementById("sound3");
+                    sound3.play();
+                    gif.src = "img/gif3.gif";
+                    message.innerHTML = "『拉進垃圾車！』";
+                    choose1.innerHTML = "";
+                    choose2.innerHTML = "";
+                    document.getElementById("choose1").style.border="unset";
+                    document.getElementById("choose2").style.border="unset";
+                    document.getElementById("choose1").style.backgroundColor="unset";
+                    document.getElementById("choose2").style.backgroundColor="unset";
+                }
+                if(i==28){
+                    var sound4 = document.getElementById("sound4");
+                    sound4.play();
+                    gif.src = "img/gif4.gif";
+                    message.innerHTML = "『垃圾車一打二！』";
+                }
+                if(i==29){
+                    gif.src = "";
+                    message.innerHTML = "就這樣，狀態很好的我連勝了七場。";
+                    i=35;
+                }
+                if(i==36){
+                    message.innerHTML = "這時候，突然有人拍了我的肩膀。";
+                }
+                if(i==37){
+                    character.src="img/yu.jpg"
+                    message.innerHTML = "『這位兄弟，我看你玩的挺好的，我們戰隊的隊員突然烙賽了，有興趣代替他打打比賽嗎？』";
+                }
+                if(i==38){
+                    character.src="img/ming.jpg"
+                    message.innerHTML = "『打比賽?很麻煩欸，而且我怕害你們輸，還是不要了。』";
+                }
+                if(i==39){
+                    character.src="img/yu.jpg"
+                    message.innerHTML = "『無要緊啦，反正我們就玩玩而已，輸贏也沒關係，而且如果好運拿冠軍的話每人可以分兩千哦。』"
+                }
+                if(i==40){
+                    character.src="img/ming.jpg"
+                    message.innerHTML = "『兩千元？好吧，現在的我剛好需要錢，我就試試吧。』"
+                }
+                if(i==41){
+                    character.src="img/yu.jpg"
+                    message.innerHTML = "『歡迎加入！那麽跟我來這邊，還有我叫余浩人，很高興認識你。』"
+                }
+                if(i==42){
+                    location.href='story3.html'
+                }
+            }
+
+            function c1(){
+                i=15;
+                talk();
+            }
+            function c2(){
+                i=25;
+                talk();
+            }
+
+            window.addEventListener( "load", start, false );
+        </script>
+    </head>
+    <body>
+        <div class="choose">
+            <a href="index.html">首頁</a>
+            <a href="intro.html">介紹</a>
+            <a href="8+9大冒險.pptx">報告下載</a>
+        </div>
+        <div>
+            <img src="img/club1.jpg" id="position">
+        </div>
+        <div>
+            <img src="img/ming.jpg" id="character" >
+            <img src="" id="gif" >
+            <table style="border:8px black groove;" cellpadding="10" id="talkBar" onclick="talk()">
+                <td id="message">一路在街上游蕩的我，走著走著就來到了平日最喜歡的網咖，無家可歸的我沒有思考就走了進去。(點擊繼續)</td>
+                <td id="choose1" ></td>
+                <td id="choose2" ></td>
+            </table>
+            <div>
+                <audio src="bgm/KerningCity.mp3" controls></audio> 
+                <audio src="bgm/sound1.mp3" id="sound1"></audio>
+                <audio src="bgm/sound2.mp3"id="sound2"></audio>
+                <audio src="bgm/sound3.mp3" id="sound3"></audio>
+                <audio src="bgm/sound4.mp3"id="sound4"></audio>
+            </div>
+            
+        </div>
+    </body>
+</html>
