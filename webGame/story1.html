@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>8+9的大冒險-第一章</title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        
+        <script type="text/javascript">
+            var i = 0;
+            function start(){
+                var talk = document.getElementById("start");
+                talk.addEventListener("click", talk, false);
+            }
+            
+            function talk(){
+                i++;
+                message = document.getElementById("message");
+                character = document.getElementById("character");
+                position = document.getElementById("position");
+                if (i==1){
+                    message.innerHTML = "『臭小子，到底要在房間待到什麽時候?快點下來吃飯！』";
+                    character.src="img/father.jpg";
+                }
+                if (i==2){
+                    message.innerHTML = "那是我的老爸——李富貴，他就是令我討厭這個家的理由。";
+                    character.src="img/ming.jpg";
+                }
+                if (i==3){
+                    message.innerHTML = "『知道啦！不要一直催我好嗎?』";
+                }
+                if(i==4){
+                    position.src = "img/livingroom.png";
+                    character.src = "img/father.jpg"
+                    message.innerHTML = "『整天躲在房間裏面不知道在做什麽，有好好念書嗎?我告訴你考不上台大四中就別說你是我的兒子！』";
+                }
+                if(i==5){
+                    character.src = "img/ming.jpg"
+                    message.innerHTML = "『我就說了很多次我不想讀書，我想早點出來工作，讀書根本不適合我!』";
+                }
+                if(i==6){
+                    character.src = "img/father.jpg"
+                    message.innerHTML = "『你不考上大學可以找什麽工作?當一個8+9嗎?整天游手好閑，不是打架就是在街上閑逛，這種沒有未來的生活就是你想要的嗎?』";
+                }
+                if(i==7){
+                    character.src = "img/ming.jpg"
+                    message.innerHTML = "『當8+9有什麽問題？受人尊重被人畏懼，總比做一個書呆子好多了！』";
+                }
+                if(i==8){
+                    character.src = "img/father.jpg"
+                    message.innerHTML = "『我辛辛苦苦養了你17年你卻跟我說要當8+9？去當啊，有種就去當一個朝不保夕的8+9啊！那時候就不要做我兒子了！』";
+                }
+                if(i==9){
+                    character.src = "img/ming.jpg"
+                    message.innerHTML = "『我就是要當8+9怎麽樣?你以爲我很想當你兒子嗎?這也要管那也要管，我就不相信沒有你我活不下去！』";
+                }
+                if(i==10){
+                    message.innerHTML = "就這樣，我離開了那個家，那個我生活了17年的家。未來是怎樣的我不知道，但是那一刻，我唯一的念頭就是脫離這個充滿壓迫的家，追尋我屬於自己的自由。";
+                }
+                if(i==11){
+                    location.href='story2.html'
+                }
+            }
+
+            
+            window.addEventListener( "load", start, false );
+        </script>
+    </head>
+    <body>
+        <div class="choose">
+            <a href="index.html">首頁</a>
+            <a href="intro.html">介紹</a>
+            <a href="8+9大冒險.pptx">報告下載</a>
+        </div>
+        <div>
+            <img src="img/bedroom.png" id="position">
+        </div>
+        <div>
+            <img src="img/ming.jpg" id="character" >
+            <table style="border:8px black groove;" cellpadding="10" id="talkBar" onclick="talk()">
+                <td id="message">我的名字叫李大明，是一個高中生，我出生在一個家境富裕的家庭中，但我卻討厭這個家。(點擊繼續)</td>
+            </table>
+            <div>
+                <audio src="bgm/VerdanturfTown.mp3" controls></audio> 
+            </div>
+            
+        </div>
+    </body>
+</html>
